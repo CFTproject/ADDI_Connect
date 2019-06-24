@@ -1,0 +1,19 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_Activity_Hdb_1979,,,2019-06-24 09:20:10,2019-06-24 09:20:15,5.263s,PASSED
+,,,,,,
+Test Cases/ROC_Activity_Hdb_1979/Roc_hogan_connector_activity_Hdb_1979,,,2019-06-24 09:20:10,2019-06-24 09:20:15,4.883s,PASSED
+"response = sendRequest(findTestObject(""ROC_Activity_Hdb_1979/Roc_hogan_connector_activity_Hdb_1979""))",,,2019-06-24 09:20:11,2019-06-24 09:20:14,3.166s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.015s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].action"", ""FileWrite"")",,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.075s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.annKeyword"", ""ActivityID"")",,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.026s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.read"", ""true"")",,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.027s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.value"", ""NAF"")",,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.021s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.resourceType"", ""File"")",,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.026s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.004s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.012s,PASSED
+activityid = annText,,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.001s,PASSED
+"println(""activityid:- "" + activityid)",,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.004s,PASSED
+DataBase_Name = value,,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.004s,PASSED
+"activity_url = ""http://localhost:9090/hogan-connector/activity/0000001979""",,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.004s,PASSED
+"println(""activity_url is :- "" + activity_url)",,,2019-06-24 09:20:14,2019-06-24 09:20:14,0.005s,PASSED
+"callTestCase(findTestCase(""ROC_Activity_Hdb_1979/Activity_Controller_Verify_Response_1979""), [""URLS"":activity_url, ""D_Name"":DataBase_Name], CONTINUE_ON_FAILURE)",,,2019-06-24 09:20:14,2019-06-24 09:20:15,0.745s,PASSED

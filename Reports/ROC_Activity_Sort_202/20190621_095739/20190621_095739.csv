@@ -1,0 +1,19 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_Activity_Sort_202,,,2019-06-21 09:59:51,2019-06-21 09:59:58,7.252s,PASSED
+,,,,,,
+Test Cases/ROC_Activity_Sort_202/Roc_hogan_connector_activity_Sort_202,,,2019-06-21 09:59:52,2019-06-21 09:59:58,6.548s,PASSED
+"response = sendRequest(findTestObject(""ROC_Activity_Sort_202/Roc_hogan_connector_activity_Sort_202""))",,,2019-06-21 09:59:53,2019-06-21 09:59:57,3.967s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.055s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].action"", ""call"")",,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.123s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.annKeyword"", ""ActivityID"")",,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.064s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.read"", ""true"")",,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.053s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.value"", ""0000000202"")",,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.058s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.resourceType"", ""SORT"")",,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.048s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.003s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.017s,PASSED
+activityid = annText,,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.004s,PASSED
+"println(""activityid:- "" + activityid)",,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.010s,PASSED
+activity_id = value,,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.002s,PASSED
+"activity_url = ""http://localhost:9090/hogan-connector/activity/0000000202""",,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.005s,PASSED
+"println(""activity_url is :- "" + activity_url)",,,2019-06-21 09:59:57,2019-06-21 09:59:57,0.002s,PASSED
+"callTestCase(findTestCase(""ROC_Activity_Sort_202/Activity_Controller_Verify_Response_202""), [""URLS"":activity_url, ""Activity_Id"":activity_id], CONTINUE_ON_FAILURE)",,,2019-06-21 09:59:57,2019-06-21 09:59:58,1.198s,PASSED
