@@ -1,0 +1,19 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_Activity_Hdb_504,,,2019-06-24 12:15:05,2019-06-24 12:15:10,4.858s,PASSED
+,,,,,,
+Test Cases/ROC_Activity_Hdb_504/Roc_hogan_connector_activity_Hdb_504,,,2019-06-24 12:15:05,2019-06-24 12:15:10,4.428s,PASSED
+"response = sendRequest(findTestObject(""ROC_Activity_Hdb_504/Roc_hogan_connector_activity_Hdb_504""))",,,2019-06-24 12:15:06,2019-06-24 12:15:09,2.902s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.022s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].action"", ""FileWrite"")",,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.068s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.annKeyword"", ""ActivityID"")",,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.026s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.read"", ""true"")",,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.026s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.value"", ""CCTXNDB"")",,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.024s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.resourceType"", ""File"")",,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.023s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.004s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.010s,PASSED
+activityid = annText,,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.003s,PASSED
+"println(""activityid:- "" + activityid)",,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.006s,PASSED
+DataBase_Name = value,,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.002s,PASSED
+"activity_url = ""http://localhost:9090/hogan-connector/activity/0000000504""",,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.001s,PASSED
+"println(""activity_url is :- "" + activity_url)",,,2019-06-24 12:15:09,2019-06-24 12:15:09,0.002s,PASSED
+"callTestCase(findTestCase(""ROC_Activity_Hdb_504/Activity_Controller_Verify_Response_504""), [""URLS"":activity_url, ""D_Name"":DataBase_Name], CONTINUE_ON_FAILURE)",,,2019-06-24 12:15:09,2019-06-24 12:15:10,0.687s,PASSED

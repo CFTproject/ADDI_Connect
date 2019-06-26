@@ -1,0 +1,19 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_Activity_Sdb_114,,,2019-06-24 12:15:33,2019-06-24 12:15:38,5.577s,PASSED
+,,,,,,
+Test Cases/ROC_Activity_Sdb_114/Roc_hogan_connector_activity_Sdb_114,,,2019-06-24 12:15:33,2019-06-24 12:15:38,5.097s,PASSED
+"response = sendRequest(findTestObject(""ROC_Activity_Sdb_114/Roc_hogan_connector_activity_Sdb_114""))",,,2019-06-24 12:15:34,2019-06-24 12:15:37,3.322s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-06-24 12:15:37,2019-06-24 12:15:37,0.027s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].action"", ""FileWrite"")",,,2019-06-24 12:15:37,2019-06-24 12:15:37,0.102s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].annKeyword"", ""ActivityID"")",,,2019-06-24 12:15:37,2019-06-24 12:15:37,0.032s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].read"", ""true"")",,,2019-06-24 12:15:37,2019-06-24 12:15:37,0.032s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].value"", ""PRINT"")",,,2019-06-24 12:15:37,2019-06-24 12:15:38,0.029s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].resourceType"", ""File"")",,,2019-06-24 12:15:38,2019-06-24 12:15:38,0.028s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-06-24 12:15:38,2019-06-24 12:15:38,0.002s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,2019-06-24 12:15:38,2019-06-24 12:15:38,0.012s,PASSED
+activityid = annText,,,2019-06-24 12:15:38,2019-06-24 12:15:38,0.003s,PASSED
+"println(""activityid:- "" + activityid)",,,2019-06-24 12:15:38,2019-06-24 12:15:38,0.007s,PASSED
+DataBase_Name = value,,,2019-06-24 12:15:38,2019-06-24 12:15:38,0.003s,PASSED
+"activity_url = ""http://localhost:9090/hogan-connector/activity/0000000114""",,,2019-06-24 12:15:38,2019-06-24 12:15:38,0.004s,PASSED
+"println(""activity_url is :- "" + activity_url)",,,2019-06-24 12:15:38,2019-06-24 12:15:38,0.004s,PASSED
+"callTestCase(findTestCase(""ROC_Activity_Sdb_114/Activity_Controller_Verify_Response_114""), [""URLS"":activity_url, ""D_Name"":DataBase_Name], CONTINUE_ON_FAILURE)",,,2019-06-24 12:15:38,2019-06-24 12:15:38,0.717s,PASSED
