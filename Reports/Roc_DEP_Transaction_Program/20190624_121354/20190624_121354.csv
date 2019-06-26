@@ -1,9 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
-Roc_DEP_Transaction_Program,,,2019-06-24 12:15:53,2019-06-24 12:17:05,1m - 12.223s,PASSED
-,,,,,,
-Test Cases/Roc_DEP_Transaction_Program/ROC_DEP_hogan_connector_txn_pgm,,,2019-06-24 12:15:53,2019-06-24 12:17:05,1m - 11.654s,PASSED
-"response = sendRequest(findTestObject(""Roc_DEP_Transaction_Program/ROC_DEP_hogan_connector_txn_pgm""))",,,2019-06-24 12:15:54,2019-06-24 12:15:57,3.560s,PASSED
-"verifyResponseStatusCode(response, 200)",,,2019-06-24 12:15:57,2019-06-24 12:15:57,0.016s,PASSED
-slurper = new groovy.json.JsonSlurper(),,,2019-06-24 12:15:57,2019-06-24 12:15:57,0.013s,PASSED
-result = slurper.parseText(response.getResponseBodyContent()),,,2019-06-24 12:15:57,2019-06-24 12:15:57,0.061s,PASSED
-"for ([i = 0, i <= 20, (i++)])",,,2019-06-24 12:15:57,2019-06-24 12:17:05,1m - 7.390s,PASSED
