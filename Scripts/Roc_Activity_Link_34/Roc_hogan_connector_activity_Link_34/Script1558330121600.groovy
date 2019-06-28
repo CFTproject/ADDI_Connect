@@ -23,7 +23,7 @@ WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.annKey
 
 WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.read', 'true')
 
-//WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.annText', '34')
+WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.annText', '34 Issue exception acty 23 using TCB$USCC')
 
 WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.value', 'P49135')
 
@@ -37,12 +37,15 @@ def result = slurper.parseText(response.getResponseBodyContent())
 
 def activityid = result.results[0].resolutions[0].target.annText
 
-println('activityid:- ' + activityid)
+String[] str = activityid.split(' ')
+
+String activity_id = str[0]
+
+println('activity_id:- ' + activity_id)
 
 def programeName = result.results[0].resolutions[0].target.value
 
-String activity_url = 'http://localhost:9090/hogan-connector/activity/0000000034'
-// + activityid
+String activity_url = 'http://localhost:9090/hogan-connector/activity/00000000'+activity_id
 
 println('activity_url is :- ' + activity_url)
 

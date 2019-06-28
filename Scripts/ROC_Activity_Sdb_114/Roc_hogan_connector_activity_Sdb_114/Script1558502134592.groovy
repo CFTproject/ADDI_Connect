@@ -23,7 +23,7 @@ WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].resources[0].
 
 WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].resources[0].read', 'true')
 
-//WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].resources[0].annText', '114')
+WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].resources[0].annText', '114 General Print-Report Output (via DG 102)')
 
 WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].resources[0].value', 'PRINT')
 
@@ -35,12 +35,15 @@ def result = slurper.parseText(response.getResponseBodyContent())
 
 def activityid = result.results[0].resolutions[0].resources[0].annText
 
-println('activityid:- ' + activityid)
+String[] str = activityid.split(' ')
+
+String activity_id = str[0]
+
+println('activity_id:- ' + activity_id)
 
 def DataBase_Name = result.results[0].resolutions[0].resources[0].value
 
-String activity_url = 'http://localhost:9090/hogan-connector/activity/0000000114' 
-//+ activityid
+String activity_url = 'http://localhost:9090/hogan-connector/activity/0000000'+activity_id 
 
 println('activity_url is :- ' + activity_url)
 

@@ -23,7 +23,7 @@ WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.annKey
 
 WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.read', 'true')
 
-//WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.annText', '202')
+WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.annText', '202 RE-SORT MON REC TYPE-80')
 
 WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.value', '0000000202')
 
@@ -35,12 +35,15 @@ def result = slurper.parseText(response.getResponseBodyContent())
 
 def activityid = result.results[0].resolutions[0].target.annText
 
-println('activityid:- ' + activityid)
+String[] str =  activityid.split(' ')
+
+String activity_ID = str[0]
+
+println('activity_ID:- ' + activity_ID)
 
 def activity_id = result.results[0].resolutions[0].target.value
 
-String activity_url = 'http://localhost:9090/hogan-connector/activity/0000000202'
-// + activityid
+String activity_url = 'http://localhost:9090/hogan-connector/activity/0000000'+activity_ID
 
 println('activity_url is :- ' + activity_url)
 
