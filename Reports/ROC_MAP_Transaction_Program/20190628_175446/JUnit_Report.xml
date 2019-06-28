@@ -1,0 +1,1768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ROC_MAP_Transaction_Program" time="17" tests="1" failures="0" errors="0">
+   <testsuite name="ROC_MAP_Transaction_Program" tests="1" failures="0" errors="0" time="17" timestamp="2019-06-28 17:58:11" hostname="khaja.h - LP-5CD7465GP0.HCLT.CORP.HCL.IN" id="Test Suites/ROC_MAP_Transaction_Program">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\khaja.h\\Katalon Studio\\ADDI_Connect\\Reports\\ROC_MAP_Transaction_Program\\20190628_175446"/>
+         <property name="logFiles" value="C:\\Users\\khaja.h\\Katalon Studio\\ADDI_Connect\\Reports\\ROC_MAP_Transaction_Program\\20190628_175446\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="khaja.h - LP-5CD7465GP0.HCLT.CORP.HCL.IN"/>
+         <property name="hostAddress" value="172.23.0.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.10.1.1"/>
+      </properties>
+      <testcase name="Test Cases/ROC_MAP_Transaction_Program/ROC_MAP_hogan_connector_txn_pgm" classname="Test Cases/ROC_MAP_Transaction_Program/ROC_MAP_hogan_connector_txn_pgm" status="PASSED">
+         <system-out><![CDATA[2019-06-28 17:58:11 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/ROC_MAP_hogan_connector_txn_pgm: Test Cases/ROC_MAP_Transaction_Program/ROC_MAP_hogan_connector_txn_pgm
+
+2019-06-28 17:58:12 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/ROC_MAP_hogan_connector_txn_pgm")): Send request successfully
+
+2019-06-28 17:58:15 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\0.har
+
+2019-06-28 17:58:15 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].source.resourceType", "CICSMap"): Verify element property value successfully
+
+2019-06-28 17:58:15 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].target.resourceType", "CobolProgram"): Verify element property value successfully
+
+2019-06-28 17:58:15 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - for ([i = 0, i <= 20, (i++)]): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:15 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:16 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\1.har
+
+2019-06-28 17:58:16 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:16 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:16 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:16 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:16 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:16 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:16 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\2.har
+
+2019-06-28 17:58:16 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:16 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:16 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:16 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:16 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:17 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:17 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\3.har
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:17 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:17 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\4.har
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:17 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:17 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\5.har
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:17 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:17 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\6.har
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:18 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:18 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\7.har
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:18 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:18 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\8.har
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:18 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:18 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\9.har
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:18 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:18 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\10.har
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:19 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:19 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\11.har
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:19 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:19 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\12.har
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:19 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:19 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\13.har
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:19 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:19 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\14.har
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:20 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:20 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\15.har
+
+2019-06-28 17:58:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:20 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:20 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\16.har
+
+2019-06-28 17:58:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:20 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:20 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:21 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\17.har
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:21 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:21 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\18.har
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:21 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:21 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\19.har
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:21 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:21 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:22 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\20.har
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:22 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:22 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\21.har
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:22 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:22 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\22.har
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:22 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:22 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:23 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\23.har
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:23 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:23 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\24.har
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:23 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:23 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\25.har
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:23 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:23 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:23 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:24 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\26.har
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:24 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:24 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\27.har
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:24 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:24 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\28.har
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:24 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:24 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\29.har
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:24 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:24 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:25 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\30.har
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:25 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:25 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\31.har
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:25 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:25 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\32.har
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:25 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:25 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:25 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:26 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\33.har
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:26 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:26 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\34.har
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:26 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:26 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\35.har
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:26 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:26 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\36.har
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:27 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:27 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\37.har
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:27 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:27 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\38.har
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:27 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:27 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\39.har
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:28 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:28 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\40.har
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - activityId = annText: null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - st = activityId.split(" "): null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - activity_id = st[0]: null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - program_Name = value: null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - activity_controller_url = "http://localhost:9090/hogan-connector/activity/" + activity_id: null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response"), ["activityid_url":activity_controller_url, "pro_name":program_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:28 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response", ["URLS":activityid_url])): Send request successfully
+
+2019-06-28 17:58:28 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\41.har
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - P_Name = pro_name: null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - println("public variable _program_Name:- " + P_Name): null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - programname = programName: null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - activitytype = activityType: null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - if (activitytype.equalsIgnoreCase("LINK")): null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", P_Name): Verify element property value successfully
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - println("programname is :- " + programname + "   Activity type is :- " + activitytype): null
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - map_transaction_controller_url = "http://localhost:9090/hogan-connector/map/" + Map_Name: null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - println("Activity Controller Url - " + i + ":-- " + activity_controller_url): null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - println("MAP Transaction Controller Url - " + i + ":-- " + map_transaction_controller_url): null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_MAP_Transaction_Program/Map_Controller_Verify_Response"), ["transaction_url":map_transaction_controller_url, "M_name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully
+
+2019-06-28 17:58:28 - [TEST_CASE][PASSED] - Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response: Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_MAP_Transaction_Program/Transaction_Controller_Verify_Response", ["URL":transaction_url])): Send request successfully
+
+2019-06-28 17:58:28 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_MAP_Transaction_Program\20190628_175446\requests\main\42.har
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - map_name = M_name: null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - println("map_name:- " + map_name): null
+
+2019-06-28 17:58:28 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", map_name): Verify element property value successfully
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:58:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_MAP_Transaction_Program/Map_Controller_Verify_Response' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-06-28 17:58:11 - [TEST_SUITE][PASSED] - ROC_MAP_Transaction_Program: Test Cases/ROC_MAP_Transaction_Program/ROC_MAP_hogan_connector_txn_pgm]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

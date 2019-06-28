@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ROC_Activity_Sdb_09" time="5" tests="1" failures="0" errors="0">
+   <testsuite name="ROC_Activity_Sdb_09" tests="1" failures="0" errors="0" time="5" timestamp="2019-06-28 17:56:02" hostname="khaja.h - LP-5CD7465GP0.HCLT.CORP.HCL.IN" id="Test Suites/ROC_Activity_Sdb_09">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\khaja.h\\Katalon Studio\\ADDI_Connect\\Reports\\ROC_Activity_Sdb_09\\20190628_175431"/>
+         <property name="logFiles" value="C:\\Users\\khaja.h\\Katalon Studio\\ADDI_Connect\\Reports\\ROC_Activity_Sdb_09\\20190628_175431\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="khaja.h - LP-5CD7465GP0.HCLT.CORP.HCL.IN"/>
+         <property name="hostAddress" value="172.23.0.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.10.1.1"/>
+      </properties>
+      <testcase name="Test Cases/ROC_Activity_Sdb_09/Roc_hogan_connector_activity_Sdb_09" classname="Test Cases/ROC_Activity_Sdb_09/Roc_hogan_connector_activity_Sdb_09" status="PASSED">
+         <system-out><![CDATA[2019-06-28 17:56:03 - [TEST_CASE][PASSED] - Test Cases/ROC_Activity_Sdb_09/Roc_hogan_connector_activity_Sdb_09: Test Cases/ROC_Activity_Sdb_09/Roc_hogan_connector_activity_Sdb_09
+
+2019-06-28 17:56:03 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_Activity_Sdb_09/Roc_hogan_connector_activity_Sdb_09")): Send request successfully
+
+2019-06-28 17:56:07 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_Activity_Sdb_09\20190628_175431\requests\main\0.har
+
+2019-06-28 17:56:07 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:56:07 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].action", "FileRead"): Verify element property value successfully
+
+2019-06-28 17:56:07 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].resources[0].annKeyword", "ActivityID"): Verify element property value successfully
+
+2019-06-28 17:56:07 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].resources[0].read", "true"): Verify element property value successfully
+
+2019-06-28 17:56:07 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].resources[0].annText", "9 *--PEMPARM INTERNAL--*"): Verify element property value successfully
+
+2019-06-28 17:56:07 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].resources[0].value", "PEMPARM"): Verify element property value successfully
+
+2019-06-28 17:56:07 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].resources[0].resourceType", "File"): Verify element property value successfully
+
+2019-06-28 17:56:07 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - activityid = annText: null
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - str = activityid.split(" "): null
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - activity_id = str[0]: null
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - println("activity_id:- " + activity_id): null
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - DataBase_Name = value: null
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - activity_url = "http://localhost:9090/hogan-connector/activity/000000000" + activity_id: null
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - println("activity_url is :- " + activity_url): null
+
+2019-06-28 17:56:07 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_Activity_Sdb_09/Activity_Controller_Verify_Response_09"), ["URLS":activity_url, "D_Name":DataBase_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_Activity_Sdb_09/Activity_Controller_Verify_Response_09' successfully
+
+2019-06-28 17:56:07 - [TEST_CASE][PASSED] - Test Cases/ROC_Activity_Sdb_09/Activity_Controller_Verify_Response_09: Test Cases/ROC_Activity_Sdb_09/Activity_Controller_Verify_Response_09
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_Activity_Sdb_09/Activity_Controller_Verify_Response_09", ["Activity_URL":URLS])): Send request successfully
+
+2019-06-28 17:56:08 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_Activity_Sdb_09\20190628_175431\requests\main\1.har
+
+2019-06-28 17:56:08 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:56:08 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].databaseName", "PEMPARM"): Verify element property value successfully
+
+2019-06-28 17:56:08 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - Databasename = D_Name: null
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - database_name = databaseName: null
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - dglist = listADG: null
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - dg = dglist.split(","): null
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - println(dg[3]): null
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - if (database_name.equalsIgnoreCase(Databasename)): Verify element property value successfully
+
+2019-06-28 17:56:08 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].activityType", "SDB"): Verify element property value successfully
+
+2019-06-28 17:56:08 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:56:08 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_Activity_Sdb_09/Activity_Controller_Verify_Response_09' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-06-28 17:56:02 - [TEST_SUITE][PASSED] - ROC_Activity_Sdb_09: Test Cases/ROC_Activity_Sdb_09/Roc_hogan_connector_activity_Sdb_09]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ROC_Activity_DC_1010" time="7" tests="1" failures="0" errors="0">
+   <testsuite name="ROC_Activity_DC_1010" tests="1" failures="0" errors="0" time="7" timestamp="2019-06-28 17:54:53" hostname="khaja.h - LP-5CD7465GP0.HCLT.CORP.HCL.IN" id="Test Suites/ROC_Activity_DC_1010">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\khaja.h\\Katalon Studio\\ADDI_Connect\\Reports\\ROC_Activity_DC_1010\\20190628_175410"/>
+         <property name="logFiles" value="C:\\Users\\khaja.h\\Katalon Studio\\ADDI_Connect\\Reports\\ROC_Activity_DC_1010\\20190628_175410\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="khaja.h - LP-5CD7465GP0.HCLT.CORP.HCL.IN"/>
+         <property name="hostAddress" value="172.23.0.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.10.1.1"/>
+      </properties>
+      <testcase name="Test Cases/ROC_Activity_DC_1010/Roc_hogan_connector_activity_DC_1010" classname="Test Cases/ROC_Activity_DC_1010/Roc_hogan_connector_activity_DC_1010" status="PASSED">
+         <system-out><![CDATA[2019-06-28 17:54:54 - [TEST_CASE][PASSED] - Test Cases/ROC_Activity_DC_1010/Roc_hogan_connector_activity_DC_1010: Test Cases/ROC_Activity_DC_1010/Roc_hogan_connector_activity_DC_1010
+
+2019-06-28 17:54:54 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_Activity_DC_1010/Roc_hogan_connector_activity_DC_1010")): Send request successfully
+
+2019-06-28 17:54:58 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_Activity_DC_1010\20190628_175410\requests\main\0.har
+
+2019-06-28 17:54:59 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:54:59 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].action", "CICSSendMap"): Verify element property value successfully
+
+2019-06-28 17:54:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].resources[0].annKeyword", "ActivityID"): Verify element property value successfully
+
+2019-06-28 17:54:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].resources[0].read", "true"): Verify element property value successfully
+
+2019-06-28 17:54:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].resources[0].value", "P49ERRM"): Verify element property value successfully
+
+2019-06-28 17:54:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].resources[0].resourceType", "CICSMap"): Verify element property value successfully
+
+2019-06-28 17:54:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].resources[0].qualifiers[0]", "P49ERRM"): Verify element property value successfully
+
+2019-06-28 17:54:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - Map_Name = value: null
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - activity_url = "http://localhost:9090/hogan-connector/activity/0000001010": null
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - println("activity_url is :- " + activity_url): null
+
+2019-06-28 17:54:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("ROC_Activity_DC_1010/Activity_Controller_Verify_Response_1010"), ["URLS":activity_url, "M_Name":Map_Name], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/ROC_Activity_DC_1010/Activity_Controller_Verify_Response_1010' successfully
+
+2019-06-28 17:54:59 - [TEST_CASE][PASSED] - Test Cases/ROC_Activity_DC_1010/Activity_Controller_Verify_Response_1010: Test Cases/ROC_Activity_DC_1010/Activity_Controller_Verify_Response_1010
+
+2019-06-28 17:55:00 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ROC_Activity_DC_1010/Activity_Controller_Verify_Response_1010", ["Activity_URL":URLS])): Send request successfully
+
+2019-06-28 17:55:00 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\ROC_Activity_DC_1010\20190628_175410\requests\main\1.har
+
+2019-06-28 17:55:00 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 17:55:00 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 17:55:00 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 17:55:00 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].mapName", "P49ERRM"): Verify element property value successfully
+
+2019-06-28 17:55:00 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:55:01 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].dataBaseAction", "DISP"): Verify element property value successfully
+
+2019-06-28 17:55:01 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:55:01 - [TEST_STEP][PASSED] - Mapnamesename = M_Name: null
+
+2019-06-28 17:55:01 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 17:55:01 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 17:55:01 - [TEST_STEP][PASSED] - map_name = mapName: null
+
+2019-06-28 17:55:01 - [TEST_STEP][PASSED] - if (map_name.equalsIgnoreCase(Mapnamesename)): Verify element property value successfully
+
+2019-06-28 17:55:01 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].activityType", "DC"): Verify element property value successfully
+
+2019-06-28 17:55:01 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 17:55:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/ROC_Activity_DC_1010/Activity_Controller_Verify_Response_1010' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-06-28 17:54:53 - [TEST_SUITE][PASSED] - ROC_Activity_DC_1010: Test Cases/ROC_Activity_DC_1010/Roc_hogan_connector_activity_DC_1010]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
