@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Roc_Activity_Link_34" time="5" tests="1" failures="0" errors="0">
+   <testsuite name="Roc_Activity_Link_34" tests="1" failures="0" errors="0" time="5" timestamp="2019-06-28 12:44:10" hostname="khaja.h - LP-5CD7465GP0.HCLT.CORP.HCL.IN" id="Test Suites/Roc_Activity_Link_34">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\khaja.h\\Katalon Studio\\ADDI_Connect\\Reports\\Roc_Activity_Link_34\\20190628_124256"/>
+         <property name="logFiles" value="C:\\Users\\khaja.h\\Katalon Studio\\ADDI_Connect\\Reports\\Roc_Activity_Link_34\\20190628_124256\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="khaja.h - LP-5CD7465GP0.HCLT.CORP.HCL.IN"/>
+         <property name="hostAddress" value="172.23.0.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.10.1.1"/>
+      </properties>
+      <testcase name="Test Cases/Roc_Activity_Link_34/Roc_hogan_connector_activity_Link_34" classname="Test Cases/Roc_Activity_Link_34/Roc_hogan_connector_activity_Link_34" status="PASSED">
+         <system-out><![CDATA[2019-06-28 12:44:10 - [TEST_CASE][PASSED] - Test Cases/Roc_Activity_Link_34/Roc_hogan_connector_activity_Link_34: Test Cases/Roc_Activity_Link_34/Roc_hogan_connector_activity_Link_34
+
+2019-06-28 12:44:11 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Roc_Activity_Link_34/Roc_hogan_connector_activity_Link_34")): Send request successfully
+
+2019-06-28 12:44:14 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\Roc_Activity_Link_34\20190628_124256\requests\main\0.har
+
+2019-06-28 12:44:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 12:44:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 12:44:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 12:44:14 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].action.", "call"): Verify element property value successfully
+
+2019-06-28 12:44:14 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 12:44:14 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].target.annKeyword", "ActivityID"): Verify element property value successfully
+
+2019-06-28 12:44:14 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 12:44:14 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].target.read", "true"): Verify element property value successfully
+
+2019-06-28 12:44:14 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 12:44:14 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].target.annText", "34 Issue exception acty 23 using TCB$USCC"): Verify element property value successfully
+
+2019-06-28 12:44:14 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 12:44:14 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].target.value", "P49135"): Verify element property value successfully
+
+2019-06-28 12:44:14 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 12:44:14 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].target.resourceType", "CobolProgram"): Verify element property value successfully
+
+2019-06-28 12:44:14 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 12:44:14 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - activityid = annText: null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - str = activityid.split(" "): null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - activity_id = str[0]: null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - println("activity_id:- " + activity_id): null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - programeName = value: null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - activity_url = "http://localhost:9090/hogan-connector/activity/00000000" + activity_id: null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - println("activity_url is :- " + activity_url): null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Roc_Activity_Link_34/Activity_Controller_Verify_Response_34"), ["URLS":activity_url, "P_Name":programeName], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Roc_Activity_Link_34/Activity_Controller_Verify_Response_34' successfully
+
+2019-06-28 12:44:15 - [TEST_CASE][PASSED] - Test Cases/Roc_Activity_Link_34/Activity_Controller_Verify_Response_34: Test Cases/Roc_Activity_Link_34/Activity_Controller_Verify_Response_34
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Roc_Activity_Link_34/Activity_Controller_Verify_Response_34", ["Activity_URL":URLS])): Send request successfully
+
+2019-06-28 12:44:15 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\Roc_Activity_Link_34\20190628_124256\requests\main\1.har
+
+2019-06-28 12:44:15 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 12:44:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", "P49135"): Verify element property value successfully
+
+2019-06-28 12:44:15 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - activity_pro_name = P_Name: null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - programe_name = programName: null
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - if (programe_name.equalsIgnoreCase(activity_pro_name)): Verify element property value successfully
+
+2019-06-28 12:44:15 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].activityType", "LINK"): Verify element property value successfully
+
+2019-06-28 12:44:15 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 12:44:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Roc_Activity_Link_34/Activity_Controller_Verify_Response_34' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-06-28 12:44:10 - [TEST_SUITE][PASSED] - Roc_Activity_Link_34: Test Cases/Roc_Activity_Link_34/Roc_hogan_connector_activity_Link_34]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
