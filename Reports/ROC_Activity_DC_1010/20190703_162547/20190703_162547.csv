@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_Activity_DC_1010,,,2019-07-03 16:26:36,2019-07-03 16:26:44,7.421s,PASSED
+,,,,,,
+Test Cases/ROC_Activity_DC_1010/Roc_hogan_connector_activity_DC_1010,,,2019-07-03 16:26:37,2019-07-03 16:26:44,6.630s,PASSED
+"response = sendRequest(findTestObject(""ROC_Activity_DC_1010/Roc_hogan_connector_activity_DC_1010""))",,,2019-07-03 16:26:38,2019-07-03 16:26:42,3.590s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.032s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].action"", ""CICSSendMap"")",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.148s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].annKeyword"", ""ActivityID"")",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.044s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].read"", ""true"")",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.045s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].annText"", ""1010 DUMMY -DC ITCB"")",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.040s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].value"", ""P49ERRM"")",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.045s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].resourceType"", ""CICSMap"")",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.045s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].qualifiers[0]"", ""P49ERRM"")",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.041s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.003s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.017s,PASSED
+activityid = annText,,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.004s,PASSED
+"str = activityid.split("" "")",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.007s,PASSED
+activity_id = str[0],,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.003s,PASSED
+"println(""activity_id:- "" + activity_id)",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.008s,PASSED
+Map_Name = value,,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.002s,PASSED
+"activity_url = ""http://localhost:9090/hogan-connector/activity/000000"" + activity_id",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.002s,PASSED
+"println(""activity_url is :- "" + activity_url)",,,2019-07-03 16:26:42,2019-07-03 16:26:42,0.004s,PASSED
+"callTestCase(findTestCase(""ROC_Activity_DC_1010/Activity_Controller_Verify_Response_1010""), [""URLS"":activity_url, ""M_Name"":Map_Name], CONTINUE_ON_FAILURE)",,,2019-07-03 16:26:42,2019-07-03 16:26:44,1.505s,PASSED

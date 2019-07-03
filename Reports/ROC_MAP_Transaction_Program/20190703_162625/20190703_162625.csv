@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_MAP_Transaction_Program,,,2019-07-03 16:30:12,2019-07-03 16:30:31,18.370s,PASSED
+,,,,,,
+Test Cases/ROC_MAP_Transaction_Program/ROC_MAP_hogan_connector_txn_pgm,,,2019-07-03 16:30:13,2019-07-03 16:30:31,17.866s,PASSED
+"response = sendRequest(findTestObject(""ROC_MAP_Transaction_Program/ROC_MAP_hogan_connector_txn_pgm""))",,,2019-07-03 16:30:14,2019-07-03 16:30:18,4.018s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-07-03 16:30:18,2019-07-03 16:30:18,0.016s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].source.resourceType"", ""CICSMap"")",,,2019-07-03 16:30:18,2019-07-03 16:30:18,0.170s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.resourceType"", ""CobolProgram"")",,,2019-07-03 16:30:18,2019-07-03 16:30:18,0.140s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-07-03 16:30:18,2019-07-03 16:30:18,0.002s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,2019-07-03 16:30:18,2019-07-03 16:30:18,0.030s,PASSED
+"for ([i = 0, i <= 20, (i++)])",,,2019-07-03 16:30:18,2019-07-03 16:30:31,12.632s,PASSED

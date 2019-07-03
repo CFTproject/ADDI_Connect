@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_Activity_END_WORK_DUMP_EXCEP,,,2019-07-03 16:27:10,2019-07-03 16:27:16,5.452s,PASSED
+,,,,,,
+Test Cases/ROC_Activity_END_WORK_DUMP_EXCEP/Roc_hogan_connector_activity_END_WORK_DUMP_EXCEP,,,2019-07-03 16:27:11,2019-07-03 16:27:16,4.650s,PASSED
+"response = sendRequest(findTestObject(""ROC_Activity_END_WORK_DUMP_EXCEP/Roc_hogan_connector_activity_END_WORK_DUMP_EXCEP""))",,,2019-07-03 16:27:12,2019-07-03 16:27:16,3.716s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-07-03 16:27:16,2019-07-03 16:27:16,0.035s,PASSED

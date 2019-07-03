@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_Activity_DC_105,,,2019-07-03 16:26:49,2019-07-03 16:26:54,4.775s,PASSED
+,,,,,,
+Test Cases/ROC_Activity_DC_105/Roc_hogan_connector_activity_DC_105,,,2019-07-03 16:26:49,2019-07-03 16:26:54,4.202s,PASSED
+"response = sendRequest(findTestObject(""ROC_Activity_DC_105/Roc_hogan_connector_activity_DC_105""))",,,2019-07-03 16:26:50,2019-07-03 16:26:54,3.561s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-07-03 16:26:54,2019-07-03 16:26:54,0.040s,PASSED

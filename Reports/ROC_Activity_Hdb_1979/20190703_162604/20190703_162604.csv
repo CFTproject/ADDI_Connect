@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_Activity_Hdb_1979,,,2019-07-03 16:27:20,2019-07-03 16:27:26,6.162s,PASSED
+,,,,,,
+Test Cases/ROC_Activity_Hdb_1979/Roc_hogan_connector_activity_Hdb_1979,,,2019-07-03 16:27:20,2019-07-03 16:27:26,5.579s,PASSED
+"response = sendRequest(findTestObject(""ROC_Activity_Hdb_1979/Roc_hogan_connector_activity_Hdb_1979""))",,,2019-07-03 16:27:21,2019-07-03 16:27:24,3.368s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-07-03 16:27:24,2019-07-03 16:27:24,0.032s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].action"", ""FileWrite"")",,,2019-07-03 16:27:24,2019-07-03 16:27:24,0.158s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].annKeyword"", ""ActivityID"")",,,2019-07-03 16:27:24,2019-07-03 16:27:24,0.052s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].read"", ""true"")",,,2019-07-03 16:27:24,2019-07-03 16:27:25,0.043s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].annText"", ""1979 NAF SEQ READ FOR UPD"")",,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.045s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].value"", ""NAF"")",,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.039s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].resourceType"", ""File"")",,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.039s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.003s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.013s,PASSED
+activityid = annText,,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.002s,PASSED
+"str = activityid.split("" "")",,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.008s,PASSED
+activity_id = str[0],,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.002s,PASSED
+"println(""activity_id:- "" + activity_id)",,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.007s,PASSED
+DataBase_Name = value,,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.003s,PASSED
+"activity_url = ""http://localhost:9090/hogan-connector/activity/000000"" + activity_id",,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.003s,PASSED
+"println(""activity_url is :- "" + activity_url)",,,2019-07-03 16:27:25,2019-07-03 16:27:25,0.004s,PASSED
+"callTestCase(findTestCase(""ROC_Activity_Hdb_1979/Activity_Controller_Verify_Response_1979""), [""URLS"":activity_url, ""D_Name"":DataBase_Name], CONTINUE_ON_FAILURE)",,,2019-07-03 16:27:25,2019-07-03 16:27:26,1.079s,PASSED
