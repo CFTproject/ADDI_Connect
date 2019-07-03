@@ -23,7 +23,7 @@ WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].resources[0].
 
 WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].resources[0].read', 'true')
 
-//WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].resources[0].annText', '1010')
+WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].resources[0].annText', '1010 DUMMY -DC ITCB')
 
 WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].resources[0].value', 'P49ERRM')
 
@@ -35,14 +35,18 @@ def slurper = new groovy.json.JsonSlurper()
 
 def result = slurper.parseText(response.getResponseBodyContent())
 
-//def activityid = result.results[0].resolutions[0].target.annText
+def activityid = result.results[0].resolutions[0].resources[0].annText
 
-//println('activityid:- ' + activityid)
+String[] str = activityid.split(' ')
+
+String activity_id = str[0]
+
+println('activity_id:- ' + activity_id)
 
 def Map_Name = result.results[0].resolutions[0].resources[0].value
 
-String activity_url = 'http://localhost:9090/hogan-connector/activity/0000001010' 
-//+ activityid
+String activity_url = 'http://localhost:9090/hogan-connector/activity/000000' +activity_id
+
 
 println('activity_url is :- ' + activity_url)
 

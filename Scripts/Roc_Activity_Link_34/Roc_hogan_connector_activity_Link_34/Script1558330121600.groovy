@@ -29,8 +29,6 @@ WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.value'
 
 WS.verifyElementPropertyValue(response, 'results[0].resolutions[0].target.resourceType', 'CobolProgram')
 
-
-
 def slurper = new groovy.json.JsonSlurper()
 
 def result = slurper.parseText(response.getResponseBodyContent())
