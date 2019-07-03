@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_Activity_DC_1010,,,2019-06-28 18:38:54,2019-06-28 18:39:02,7.602s,PASSED
+,,,,,,
+Test Cases/ROC_Activity_DC_1010/Roc_hogan_connector_activity_DC_1010,,,2019-06-28 18:38:55,2019-06-28 18:39:02,6.918s,PASSED
+"response = sendRequest(findTestObject(""ROC_Activity_DC_1010/Roc_hogan_connector_activity_DC_1010""))",,,2019-06-28 18:38:55,2019-06-28 18:39:00,4.176s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.036s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].action"", ""CICSSendMap"")",,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.113s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].annKeyword"", ""ActivityID"")",,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.058s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].read"", ""true"")",,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.050s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].value"", ""P49ERRM"")",,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.036s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].resourceType"", ""CICSMap"")",,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.041s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].qualifiers[0]"", ""P49ERRM"")",,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.059s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.008s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.016s,PASSED
+Map_Name = value,,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.004s,PASSED
+"activity_url = ""http://localhost:9090/hogan-connector/activity/0000001010""",,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.004s,PASSED
+"println(""activity_url is :- "" + activity_url)",,,2019-06-28 18:39:00,2019-06-28 18:39:00,0.004s,PASSED
+"callTestCase(findTestCase(""ROC_Activity_DC_1010/Activity_Controller_Verify_Response_1010""), [""URLS"":activity_url, ""M_Name"":Map_Name], CONTINUE_ON_FAILURE)",,,2019-06-28 18:39:00,2019-06-28 18:39:02,1.517s,PASSED

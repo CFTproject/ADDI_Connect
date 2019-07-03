@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_Activity_Hdb_504,,,2019-06-28 18:39:39,2019-06-28 18:39:44,5.348s,PASSED
+,,,,,,
+Test Cases/ROC_Activity_Hdb_504/Roc_hogan_connector_activity_Hdb_504,,,2019-06-28 18:39:39,2019-06-28 18:39:44,4.835s,PASSED
+"response = sendRequest(findTestObject(""ROC_Activity_Hdb_504/Roc_hogan_connector_activity_Hdb_504""))",,,2019-06-28 18:39:40,2019-06-28 18:39:43,3.210s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.017s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].action"", ""FileWrite"")",,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.070s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].annKeyword"", ""ActivityID"")",,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.031s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].read"", ""true"")",,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.028s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].annText"", ""504 ERASE CCTXNDB RECS"")",,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.026s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].value"", ""CCTXNDB"")",,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.025s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].resources[0].resourceType"", ""File"")",,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.024s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.002s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.011s,PASSED
+activityid = annText,,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.002s,PASSED
+"str = activityid.split("" "")",,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.007s,PASSED
+activity_id = str[0],,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.001s,PASSED
+"println(""activity_id:- "" + activity_id)",,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.006s,PASSED
+DataBase_Name = value,,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.004s,PASSED
+"activity_url = ""http://localhost:9090/hogan-connector/activity/0000000"" + activity_id",,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.002s,PASSED
+"println(""activity_url is :- "" + activity_url)",,,2019-06-28 18:39:43,2019-06-28 18:39:43,0.004s,PASSED
+"callTestCase(findTestCase(""ROC_Activity_Hdb_504/Activity_Controller_Verify_Response_504""), [""URLS"":activity_url, ""D_Name"":DataBase_Name], CONTINUE_ON_FAILURE)",,,2019-06-28 18:39:43,2019-06-28 18:39:44,0.713s,PASSED

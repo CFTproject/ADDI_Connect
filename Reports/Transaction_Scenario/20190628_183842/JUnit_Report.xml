@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Transaction_Scenario" time="11" tests="1" failures="0" errors="0">
+   <testsuite name="Transaction_Scenario" tests="1" failures="0" errors="0" time="11" timestamp="2019-06-28 18:42:16" hostname="khaja.h - LP-5CD7465GP0.HCLT.CORP.HCL.IN" id="Test Suites/Transaction_Scenario">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\khaja.h\\Katalon Studio\\ADDI_Connect\\Reports\\Transaction_Scenario\\20190628_183842"/>
+         <property name="logFiles" value="C:\\Users\\khaja.h\\Katalon Studio\\ADDI_Connect\\Reports\\Transaction_Scenario\\20190628_183842\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="khaja.h - LP-5CD7465GP0.HCLT.CORP.HCL.IN"/>
+         <property name="hostAddress" value="172.23.0.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.10.1.1"/>
+      </properties>
+      <testcase name="Test Cases/Transaction_Scenario/ROC_hogan-connector_transaction" classname="Test Cases/Transaction_Scenario/ROC_hogan-connector_transaction" status="PASSED">
+         <system-out><![CDATA[2019-06-28 18:42:16 - [TEST_CASE][PASSED] - Test Cases/Transaction_Scenario/ROC_hogan-connector_transaction: Test Cases/Transaction_Scenario/ROC_hogan-connector_transaction
+
+2019-06-28 18:42:17 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Transaction_Scenario/ROC_hogan-connector_transaction")): Send request successfully
+
+2019-06-28 18:42:20 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\Transaction_Scenario\20190628_183842\requests\main\0.har
+
+2019-06-28 18:42:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 18:42:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].action", "call"): Verify element property value successfully
+
+2019-06-28 18:42:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].target.read", "true"): Verify element property value successfully
+
+2019-06-28 18:42:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[0].target.resourceType", "CobolProgram"): Verify element property value successfully
+
+2019-06-28 18:42:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[1].action", "call"): Verify element property value successfully
+
+2019-06-28 18:42:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[1].target.read", "true"): Verify element property value successfully
+
+2019-06-28 18:42:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "results[0].resolutions[1].target.resourceType", "CobolProgram"): Verify element property value successfully
+
+2019-06-28 18:42:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - program_name1 = value: null
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - program_name2 = value: null
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - println(program_name1): null
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - println(program_name2): null
+
+2019-06-28 18:42:20 - [TEST_STEP][PASSED] - Program_Name1 = program_name1: null
+
+2019-06-28 18:42:21 - [TEST_STEP][PASSED] - Program_Name2 = program_name2: null
+
+2019-06-28 18:42:21 - [TEST_STEP][PASSED] - value = "00319/00049 00101/00010": null
+
+2019-06-28 18:42:21 - [TEST_STEP][PASSED] - st = value.split(" "): null
+
+2019-06-28 18:42:21 - [TEST_STEP][PASSED] - for ([i = 0, i <= 1, (i++)]): Call Test Case 'Test Cases/Transaction_Scenario/hogan-connector_transaction_Function_Application' successfully
+
+2019-06-28 18:42:21 - [TEST_STEP][PASSED] - transaction_url = "http://localhost:9090/hogan-connector/transaction/" + st[i]: null
+
+2019-06-28 18:42:21 - [TEST_STEP][PASSED] - println(transaction_url): null
+
+2019-06-28 18:42:21 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Transaction_Scenario/hogan-connector_transaction_Function_Application"), ["Transaction_urls":transaction_url], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Transaction_Scenario/hogan-connector_transaction_Function_Application' successfully
+
+2019-06-28 18:42:21 - [TEST_CASE][PASSED] - Test Cases/Transaction_Scenario/hogan-connector_transaction_Function_Application: Test Cases/Transaction_Scenario/hogan-connector_transaction_Function_Application
+
+2019-06-28 18:42:21 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Transaction_Scenario/hogan-connector_transaction_Function_Application", ["URLS":Transaction_urls])): Send request successfully
+
+2019-06-28 18:42:23 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\Transaction_Scenario\20190628_183842\requests\main\1.har
+
+2019-06-28 18:42:23 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 18:42:23 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 18:42:23 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 18:42:23 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 18:42:23 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 18:42:23 - [TEST_STEP][PASSED] - activity_id = listActivities: null
+
+2019-06-28 18:42:23 - [TEST_STEP][PASSED] - str = activity_id: null
+
+2019-06-28 18:42:23 - [TEST_STEP][PASSED] - s = str.split(" "): null
+
+2019-06-28 18:42:23 - [TEST_STEP][PASSED] - for ([i = 0, i <= 1, (i++)]): Call Test Case 'Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 18:42:23 - [TEST_STEP][PASSED] - activity_url = "http://localhost:9090/hogan-connector/activity/" + s[i]: null
+
+2019-06-28 18:42:23 - [TEST_STEP][PASSED] - println(activity_url): null
+
+2019-06-28 18:42:23 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Transaction_Scenario/Activity_Controller_Verify_Response"), ["activity_urls":activity_url], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 18:42:23 - [TEST_CASE][PASSED] - Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response: Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response
+
+2019-06-28 18:42:23 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Transaction_Scenario/Activity_Controller_Verify_Response", ["URLSS":activity_urls])): Send request successfully
+
+2019-06-28 18:42:24 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\Transaction_Scenario\20190628_183842\requests\main\2.har
+
+2019-06-28 18:42:24 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 18:42:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - println("GlobalVariable.Program_Name1" + Program_Name1): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - println("GlobalVariable.Program_Name2" + Program_Name2): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - activity_Type = activityType: null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - P_Name = programName: null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - println(activity_Type): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - if (activity_Type.equalsIgnoreCase("LINK")): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - else: null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - println("activityType is DC"): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - if (P_Name.equalsIgnoreCase(Program_Name1)): null
+
+2019-06-28 18:42:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - activity_url = "http://localhost:9090/hogan-connector/activity/" + s[i]: null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - println(activity_url): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Transaction_Scenario/Activity_Controller_Verify_Response"), ["activity_urls":activity_url], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 18:42:24 - [TEST_CASE][PASSED] - Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response: Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Transaction_Scenario/Activity_Controller_Verify_Response", ["URLSS":activity_urls])): Send request successfully
+
+2019-06-28 18:42:24 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\Transaction_Scenario\20190628_183842\requests\main\3.har
+
+2019-06-28 18:42:24 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 18:42:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - println("GlobalVariable.Program_Name1" + Program_Name1): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - println("GlobalVariable.Program_Name2" + Program_Name2): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - activity_Type = activityType: null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - P_Name = programName: null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - println(activity_Type): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - if (activity_Type.equalsIgnoreCase("LINK")): Verify element property value successfully
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].activityType", "LINK"): Verify element property value successfully
+
+2019-06-28 18:42:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - if (P_Name.equalsIgnoreCase(Program_Name1)): Verify element property value successfully
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", Program_Name1): Verify element property value successfully
+
+2019-06-28 18:42:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 18:42:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 18:42:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Transaction_Scenario/hogan-connector_transaction_Function_Application' successfully
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - transaction_url = "http://localhost:9090/hogan-connector/transaction/" + st[i]: null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - println(transaction_url): null
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Transaction_Scenario/hogan-connector_transaction_Function_Application"), ["Transaction_urls":transaction_url], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Transaction_Scenario/hogan-connector_transaction_Function_Application' successfully
+
+2019-06-28 18:42:24 - [TEST_CASE][PASSED] - Test Cases/Transaction_Scenario/hogan-connector_transaction_Function_Application: Test Cases/Transaction_Scenario/hogan-connector_transaction_Function_Application
+
+2019-06-28 18:42:24 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Transaction_Scenario/hogan-connector_transaction_Function_Application", ["URLS":Transaction_urls])): Send request successfully
+
+2019-06-28 18:42:26 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\Transaction_Scenario\20190628_183842\requests\main\4.har
+
+2019-06-28 18:42:26 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 18:42:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 18:42:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 18:42:26 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 18:42:26 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 18:42:26 - [TEST_STEP][PASSED] - activity_id = listActivities: null
+
+2019-06-28 18:42:26 - [TEST_STEP][PASSED] - str = activity_id: null
+
+2019-06-28 18:42:26 - [TEST_STEP][PASSED] - s = str.split(" "): null
+
+2019-06-28 18:42:26 - [TEST_STEP][PASSED] - for ([i = 0, i <= 1, (i++)]): Call Test Case 'Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 18:42:26 - [TEST_STEP][PASSED] - activity_url = "http://localhost:9090/hogan-connector/activity/" + s[i]: null
+
+2019-06-28 18:42:26 - [TEST_STEP][PASSED] - println(activity_url): null
+
+2019-06-28 18:42:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Transaction_Scenario/Activity_Controller_Verify_Response"), ["activity_urls":activity_url], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 18:42:26 - [TEST_CASE][PASSED] - Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response: Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response
+
+2019-06-28 18:42:26 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Transaction_Scenario/Activity_Controller_Verify_Response", ["URLSS":activity_urls])): Send request successfully
+
+2019-06-28 18:42:27 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\Transaction_Scenario\20190628_183842\requests\main\5.har
+
+2019-06-28 18:42:27 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 18:42:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - println("GlobalVariable.Program_Name1" + Program_Name1): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - println("GlobalVariable.Program_Name2" + Program_Name2): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - activity_Type = activityType: null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - P_Name = programName: null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - println(activity_Type): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - if (activity_Type.equalsIgnoreCase("LINK")): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - else: null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - println("activityType is DC"): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - if (P_Name.equalsIgnoreCase(Program_Name1)): null
+
+2019-06-28 18:42:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - activity_url = "http://localhost:9090/hogan-connector/activity/" + s[i]: null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - println(activity_url): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Transaction_Scenario/Activity_Controller_Verify_Response"), ["activity_urls":activity_url], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 18:42:27 - [TEST_CASE][PASSED] - Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response: Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Transaction_Scenario/Activity_Controller_Verify_Response", ["URLSS":activity_urls])): Send request successfully
+
+2019-06-28 18:42:27 - [MESSAGE][INFO] - HAR: C:\Users\khaja.h\Katalon Studio\ADDI_Connect\Reports\Transaction_Scenario\20190628_183842\requests\main\6.har
+
+2019-06-28 18:42:27 - [MESSAGE][PASSED] - Send request successfully
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-06-28 18:42:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - println("GlobalVariable.Program_Name1" + Program_Name1): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - println("GlobalVariable.Program_Name2" + Program_Name2): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - activity_Type = activityType: null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - P_Name = programName: null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - println(activity_Type): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - if (activity_Type.equalsIgnoreCase("LINK")): Verify element property value successfully
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].activityType", "LINK"): Verify element property value successfully
+
+2019-06-28 18:42:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - if (P_Name.equalsIgnoreCase(Program_Name1)): null
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - else if (P_Name.equalsIgnoreCase(Program_Name2)): Verify element property value successfully
+
+2019-06-28 18:42:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].programName", Program_Name2): Verify element property value successfully
+
+2019-06-28 18:42:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-06-28 18:42:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Transaction_Scenario/Activity_Controller_Verify_Response' successfully
+
+2019-06-28 18:42:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Transaction_Scenario/hogan-connector_transaction_Function_Application' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-06-28 18:42:16 - [TEST_SUITE][PASSED] - Transaction_Scenario: Test Cases/Transaction_Scenario/ROC_hogan-connector_transaction]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

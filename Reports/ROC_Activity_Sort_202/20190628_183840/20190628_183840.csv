@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ROC_Activity_Sort_202,,,2019-06-28 18:40:24,2019-06-28 18:40:29,5.117s,PASSED
+,,,,,,
+Test Cases/ROC_Activity_Sort_202/Roc_hogan_connector_activity_Sort_202,,,2019-06-28 18:40:25,2019-06-28 18:40:29,4.695s,PASSED
+"response = sendRequest(findTestObject(""ROC_Activity_Sort_202/Roc_hogan_connector_activity_Sort_202""))",,,2019-06-28 18:40:25,2019-06-28 18:40:28,3.109s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.021s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].action"", ""call"")",,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.099s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.annKeyword"", ""ActivityID"")",,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.027s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.read"", ""true"")",,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.025s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.annText"", ""202 RE-SORT MON REC TYPE-80"")",,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.027s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.value"", ""0000000202"")",,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.029s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.resourceType"", ""SORT"")",,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.034s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.004s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.009s,PASSED
+activityid = annText,,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.002s,PASSED
+"str = activityid.split("" "")",,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.004s,PASSED
+activity_ID = str[0],,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.001s,PASSED
+"println(""activity_ID:- "" + activity_ID)",,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.006s,PASSED
+activity_id = value,,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.002s,PASSED
+"activity_url = ""http://localhost:9090/hogan-connector/activity/0000000"" + activity_ID",,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.002s,PASSED
+"println(""activity_url is :- "" + activity_url)",,,2019-06-28 18:40:28,2019-06-28 18:40:28,0.001s,PASSED
+"callTestCase(findTestCase(""ROC_Activity_Sort_202/Activity_Controller_Verify_Response_202""), [""URLS"":activity_url, ""Activity_Id"":activity_id], CONTINUE_ON_FAILURE)",,,2019-06-28 18:40:28,2019-06-28 18:40:29,0.752s,PASSED

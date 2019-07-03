@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Transaction_Scenario,,,2019-06-28 18:42:16,2019-06-28 18:42:27,11.120s,PASSED
+,,,,,,
+Test Cases/Transaction_Scenario/ROC_hogan-connector_transaction,,,2019-06-28 18:42:16,2019-06-28 18:42:27,10.598s,PASSED
+"response = sendRequest(findTestObject(""Transaction_Scenario/ROC_hogan-connector_transaction""))",,,2019-06-28 18:42:17,2019-06-28 18:42:20,3.234s,PASSED
+"verifyResponseStatusCode(response, 200)",,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.020s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].action"", ""call"")",,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.066s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.read"", ""true"")",,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.027s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[0].target.resourceType"", ""CobolProgram"")",,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.032s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[1].action"", ""call"")",,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.025s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[1].target.read"", ""true"")",,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.030s,PASSED
+"verifyElementPropertyValue(response, ""results[0].resolutions[1].target.resourceType"", ""CobolProgram"")",,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.023s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.004s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.013s,PASSED
+program_name1 = value,,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.002s,PASSED
+program_name2 = value,,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.003s,PASSED
+println(program_name1),,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.005s,PASSED
+println(program_name2),,,2019-06-28 18:42:20,2019-06-28 18:42:20,0.002s,PASSED
+Program_Name1 = program_name1,,,2019-06-28 18:42:20,2019-06-28 18:42:21,0.070s,PASSED
+Program_Name2 = program_name2,,,2019-06-28 18:42:21,2019-06-28 18:42:21,0.002s,PASSED
+"value = ""00319/00049 00101/00010""",,,2019-06-28 18:42:21,2019-06-28 18:42:21,0.002s,PASSED
+"st = value.split("" "")",,,2019-06-28 18:42:21,2019-06-28 18:42:21,0.002s,PASSED
+"for ([i = 0, i <= 1, (i++)])",,,2019-06-28 18:42:21,2019-06-28 18:42:27,6.347s,PASSED
